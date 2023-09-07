@@ -1,0 +1,24 @@
+/* --------------------------------------------------------- */
+/* ---------- Anulo los estilos de autocompletado ---------- */
+/* --------------------------------------------------------- */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: yellow;
+  transition: background-color 5000s ease-in-out 0s; /* esta transición es un truco para "anular" el cambio de color de fondo */
+}
+
+/* Para otros navegadores que no son WebKit, si es necesario */
+input:-moz-autofill,
+input:-moz-autofill:hover,
+input:-moz-autofill:focus {
+  color: inherit;
+  background: inherit;
+}
+
+//Elimino el ojo para mostrar contraseña en algunos navegadores modernos
+input[type="password"]::-ms-reveal {
+  display: none;
+}
