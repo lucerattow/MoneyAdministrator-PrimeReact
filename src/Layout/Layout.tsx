@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames';
-import { Header } from "@/Layout"
+import { Header, NotificationPanel } from "@/Layout"
 import styles from "./Layout.module.scss"
 
 export type LayoutProps = {
@@ -15,6 +15,7 @@ export const Layout: React.FC<LayoutProps> = ({ className, children }) => {
       <div className={styles.layout_content}>
         {children}
       </div>
+      <NotificationPanel />
     </div>
   )
 }

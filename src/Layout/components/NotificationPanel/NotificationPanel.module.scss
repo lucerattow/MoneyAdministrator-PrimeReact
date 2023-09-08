@@ -1,0 +1,43 @@
+@import "@/styles/index.scss";
+
+.container {
+  position: fixed;
+  z-index: $notification-panel-depth;
+
+  display: flex;
+  flex-direction: column;
+  background-color: $surface-card;
+  top: 0;
+  right: 0;
+  width: $notification-panel-width;
+  height: 100vh;
+  border-left: 1px solid $surface-border;
+
+  transform: translateX(100%);
+  /* inicialmente está fuera de la vista */
+  transition: transform 0.1s ease-out;
+  /* animación */
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+    padding: 0px $content-padding;
+    border-bottom: 1px solid $surface-border;
+
+    .button {
+      width: 40px !important;
+      height: 40px !important;
+    }
+  }
+
+  .divider {
+    margin: 0px;
+  }
+}
+
+.show {
+  transform: translateX(0);
+}

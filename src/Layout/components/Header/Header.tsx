@@ -1,8 +1,8 @@
 import React from 'react'
 import classNames from "classnames"
+import { useAppContext } from '@/hooks';
 import { Avatar } from 'primereact/avatar';
 import { Button } from 'primereact/button';
-import { Badge } from 'primereact/badge';
 import styles from "./Header.module.scss"
 
 export type HeaderProps = {
@@ -10,6 +10,10 @@ export type HeaderProps = {
 }
 
 export const Header: React.FC<HeaderProps> = ({ className }) => {
+  const { setNotificationPanelShow } = useAppContext()
+
+  const handleNotificationClick = () => setNotificationPanelShow(true)
+
   return (
     <header className={classNames(className, styles.header)}>
       <h2>Money Administrator</h2>
@@ -28,6 +32,7 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
           icon="pi pi-bell"
           rounded
           aria-label="Notification"
+          onClick={handleNotificationClick}
         />
       </div>
     </header>
