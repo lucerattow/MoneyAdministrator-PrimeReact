@@ -10,19 +10,43 @@ $font-family: "OpenSans",
 $content-padding: 1.25rem;
 $inline-spacing: 0.5rem;
 $border-radius: 4px;
+$disable-opacity: 0.4;
 $focus-ring: 0 0 0 0.2rem rgba(255, 140, 0, 0.6);
 $maskbg: rgba(0, 0, 0, 0.4);
-$highlight-bg: rgba(165, 180, 252, 0.16);
-$highlight-text-color: rgba(255, 255, 255, 0.87);
+$box-shadow-color: rgba(255, 207, 149, 0.5);
 
-//prime react colores
-$primary-color: #ff8f00;
-$primary-color-text: #1c2127;
+$highlight-bg: rgba(165, 180, 252, 0.16);
+$hover-bg: $highlight-bg;
+
+$highlight-text-color: white;
+$focus-outline: rgba(255, 143, 0, 0.6);
+
+//core colors
 $text-color: rgba(255, 255, 255, 0.87);
 $text-color-secondary: rgba(255, 255, 255, 0.6);
-$secondary-color: #cbd5e1;
-$secondary-color-text: #1c2127;
-$border-color-hov-foc: #a5b4fc;
+$error: #ff5757;
+
+//colors levels
+$primary-color: #ff8f00;
+$primary-color-text: #1c2127;
+$secondary-bg: #cbd5e1;
+$secondary-text: #1c2127;
+$success-bg: #4fff2c;
+$success-text: $primary-color-text;
+$info-bg: #489dfe;
+$info-text: $primary-color-text;
+$warning-bg: #fd0;
+$warning-text: $primary-color-text;
+$help-bg: #bd81fe;
+$help-text: $primary-color-text;
+$danger-bg: #f66;
+$danger-text: $primary-color-text;
+
+//messages
+$message-info: #9fccff;
+$message-warning: #fff2a0;
+$message-help: #cd9fff;
+$message-danger: #ffa2a2;
 
 //bg
 $surface-ground: #040d19;
@@ -31,6 +55,12 @@ $surface-card: #071426;
 $surface-overlay: #071426;
 $surface-border: #0b213f;
 $surface-hover: rgba(255, 255, 255, .03);
+
+//forms
+$form-bg: $surface-ground;
+$form-border-focus: $primary-color;
+$form-border-hover: $primary-color;
+$form-filled-background: #0f2846;
 
 //otros colores bg
 $surface-a: #071426;
