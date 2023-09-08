@@ -1,13 +1,14 @@
 import { PrimeReactProvider } from 'primereact/api';
 import { AppContextProvider } from '@/context';
 import { Layout } from "@/Layout"
+import { AppRoutes } from '@/routes';
 
 const App = () => {
   return (
     <PrimeReactProvider>
       <AppContextProvider>
         <Layout>
-          <div>Children</div>
+          <AppRoutes />
         </Layout>
       </AppContextProvider>
     </PrimeReactProvider>
