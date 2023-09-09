@@ -1,0 +1,61 @@
+//Colores
+$_darker: 35%;
+$_lighten: 20%;
+
+$_textColor: rgba(#fff, .87);
+$_fontFamily: Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$_primaryColor:               #ff8f00;
+$_primaryTextColor:           $_textColor; //#1c2127
+$_secondaryButtonBg:          #888f97;
+$_infoButtonBg:               #3B82F6;
+$_successButtonBg:            #79ff2c;
+$_warningButtonBg:            #ffd931;
+$_helpButtonBg:               #86e0e7;
+$_dangerButtonBg:             #ff5757;
+
+$_secondaryButtonTextColor:   $_textColor;
+$_infoButtonTextColor:        $_textColor;
+$_successButtonTextColor:     $_textColor;
+$_warningButtonTextColor:     $_textColor;
+$_helpButtonTextColor:        $_textColor;
+$_dangerButtonTextColor:      $_textColor;
+
+$_errorColor:                 $_dangerButtonBg;
+$_ratingCancelIconColor:      $_dangerButtonBg;
+$_ratingCancelIconHoverColor: $_dangerButtonBg;
+
+//messages
+$_infoMessageBg:              lighten($_infoButtonBg, $_lighten);
+$_infoMessageTextColor:       darken($_infoButtonBg, $_darker);
+$_infoMessageBorder:          $_infoMessageTextColor;
+$_infoMessageIconColor:       $_infoMessageTextColor;
+
+$_successMessageBg:           lighten($_successButtonBg, $_lighten);
+$_successMessageTextColor:    darken($_successButtonBg, $_darker);
+$_successMessageBorder:       $_successMessageTextColor;
+$_successMessageIconColor:    $_successMessageTextColor;
+
+$_warningMessageBg:           lighten($_warningButtonBg, $_lighten);
+$_warningMessageTextColor:    darken($_warningButtonBg, $_darker);
+$_warningMessageBorder:       $_warningMessageTextColor;
+$_warningMessageIconColor:    $_warningMessageTextColor;
+
+$_errorMessageBg:             lighten($_dangerButtonBg, $_lighten);
+$_errorMessageBorder:         darken($_dangerButtonBg, $_darker);
+$_errorMessageTextColor:      $_errorMessageBorder;
+$_errorMessageIconColor:      $_errorMessageBorder;
+
+$_highlightBg:                rgba(94, 234, 212, .16);
+$_highlightTextColor:         rgba(255,255,255,.87);
+
+// surfaces
+$_lightBg:                    #233752;
+$_borderBg:                   #0b213f;  //input bg, border, divider
+$_menuBg:                     #091a32;  //menu bg
+$_elevatedBg:                 #071426;  //elevated surface
+$_groundBg:                   #040d19;  //ground surface
+
+// otras variables
+$_panelContentPadding:1.25rem;
+$_borderRadius: 4px;

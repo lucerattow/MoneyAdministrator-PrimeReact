@@ -1,4 +1,32 @@
-@import "./themes/fonts.scss";
-@import "./variables.scss";
-@import "./themes/theme-blue.scss";
-@import "./autocomplete.scss";
+@import "./themes/config";
+
+//Variables de ancho y alto
+$header_height: 64px;
+$leftPanel_width: 250px;
+$authPanel_width: 350px;
+$notificationPanel_width: 350px;
+$scrollBar_width: 10px;
+
+//Variables de profundidad
+$leftDrawer_depth: 5;
+$header_depth: 10;
+$notificationPanel_depth: 20;
+
+//surfaces
+$padding:$_panelContentPadding;
+$borderRadius:$_borderRadius;
+$color_surface_light:$_lightBg;
+$color_surface_border:$_borderBg;  //input bg, border, divider
+$color_surface_menu:$_menuBg;  //menu bg
+$color_surface_elevated:$_elevatedBg;  //elevated surface
+$color_surface_ground:$_groundBg;  //ground surface
+
+//Colores principales
+$color_text:$_textColor;
+$color_primary:$_primaryColor;
+$color_secondary:$_secondaryButtonBg;
+$color_info:$_infoButtonBg;
+$color_success:$_successButtonBg;
+$color_warning:$_warningButtonBg;
+$color_help:$_helpButtonBg;
+$color_danger:$_dangerButtonBg;

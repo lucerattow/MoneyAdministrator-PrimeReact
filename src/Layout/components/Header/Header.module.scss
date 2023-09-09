@@ -1,18 +1,18 @@
-@import "@/styles/variables.scss";
+@import "@/styles/index";
 
 .header {
   position: relative;
-  z-index: $header-depth;
-  height: $header-height;
-  padding: 0px $content-padding;
+  z-index: $header_depth;
+  height: $header_height;
+  padding: 0px $padding;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
-  background-color: $surface-card;
-  border-bottom: 1px solid $surface-border;
+  background-color: $color_surface_elevated;
+  border-bottom: 1px solid $color_surface_border;
   border-radius: 0;
   box-shadow: 0 0px 10px 3px rgba(0, 0, 0, 0.2) !important;
 
@@ -22,8 +22,8 @@
     align-items: center;
 
     &_avatar {
-      background-color: $primary-color;
-      color: $primary-color-text;
+      background-color: $color_primary;
+      color: $color_text;
     }
 
     &_displayName,

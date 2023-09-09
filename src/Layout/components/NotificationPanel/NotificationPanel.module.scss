@@ -1,17 +1,17 @@
-@import "@/styles/variables.scss";
+@import "@/styles/index";
 
 .container {
   position: fixed;
-  z-index: $notification-panel-depth;
+  z-index: $notificationPanel_depth;
 
   display: flex;
   flex-direction: column;
-  background-color: $surface-card;
+  background-color: $color_surface_elevated;
   top: 0;
   right: 0;
-  width: $notification-panel-width;
+  width: $notificationPanel_width;
   height: 100vh;
-  border-left: 1px solid $surface-border;
+  border-left: 1px solid $color_surface_border;
 
   transform: translateX(100%);
   /* inicialmente está fuera de la vista */
@@ -23,9 +23,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: $header-height;
-    padding: 0px $content-padding;
-    border-bottom: 1px solid $surface-border;
+    height: $header_height;
+    padding: 0px $padding;
+    border-bottom: 1px solid $color_surface_border;
 
     .button {
       width: 40px !important;
