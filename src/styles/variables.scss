@@ -1,3 +1,15 @@
+//Variables de ancho y alto
+$header-height: 64px;
+$left-panel-width: 250px;
+$auth-panel-width: 350px;
+$notification-panel-width: 450px;
+$scroll-bar-width: 10px;
+
+//Variables de profundidad
+$left-drawer-depth: 5;
+$header-depth: 10;
+$notification-panel-depth: 20;
+
 //prime react principal
 $font-family: "OpenSans",
   Segoe UI,
@@ -31,18 +43,27 @@ $primary-color: #ff8f00;
 $primary-color-text: #1c2127;
 $secondary-bg: #cbd5e1;
 $secondary-text: #1c2127;
+
 $success-bg: #4fff2c;
 $success-text: $primary-color-text;
+$success-shadow: #178800;
+$success-outlined: rgba(0, 255, 94, .16);
+
 $info-bg: #489dfe;
 $info-text: $primary-color-text;
+
 $warning-bg: #fd0;
 $warning-text: $primary-color-text;
+$warning-button-outlined: rgba(255, 221, 0, .04);
+
 $help-bg: #bd81fe;
 $help-text: $primary-color-text;
+
 $danger-bg: #f66;
 $danger-text: $primary-color-text;
 
 //messages
+$message-success: #b3ffa3;
 $message-info: #9fccff;
 $message-warning: #fff2a0;
 $message-help: #cd9fff;
