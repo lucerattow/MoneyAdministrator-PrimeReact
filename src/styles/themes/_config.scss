@@ -49,6 +49,8 @@ $_errorMessageIconColor:      $_errorMessageBorder;
 $_highlightBg:                rgba(94, 234, 212, .16);
 $_highlightTextColor:         rgba(255,255,255,.87);
 
+@import "./config/padding";
+
 // surfaces
 $_lightBg:                    #233752;
 $_borderBg:                   #0b213f;  //input bg, border, divider
@@ -57,5 +59,4 @@ $_elevatedBg:                 #071426;  //elevated surface
 $_groundBg:                   #040d19;  //ground surface
 
 // otras variables
-$_panelContentPadding:1.25rem;
 $_borderRadius: 4px;
