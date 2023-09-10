@@ -1,1 +1,2 @@
-export * from "./Backgrounds/AuthBackground/AuthBackground"
+export * from "./backgrounds/AuthBackground/AuthBackground"
+export * from "./PageContainer/Breadcrumbs/Breadcrumbs"

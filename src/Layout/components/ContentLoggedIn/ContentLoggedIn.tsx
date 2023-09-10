@@ -1,6 +1,7 @@
 import React from 'react'
 import classNames from "classnames"
 import { LeftPanelMenu } from "@/Layout"
+import { PageContainer } from '@/components'
 import styles from "./ContentLoggedIn.module.scss"
 
 export type ContentLoggedInProps = {
@@ -12,7 +13,9 @@ export const ContentLoggedIn: React.FC<ContentLoggedInProps> = ({ className, chi
   return (
     <div className={classNames(className, styles.content)}>
       <LeftPanelMenu className={styles.leftPanel} />
-      {children}
+      <PageContainer>
+        {children}
+      </PageContainer>
     </div>
   )
 }

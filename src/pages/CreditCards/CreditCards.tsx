@@ -1,5 +1,6 @@
 import React from "react"
 import classNames from "classnames"
+import { PageContainer } from '@/components'
 import styles from "./CreditCards.module.scss"
 
 export type CreditCardsProps = {
@@ -9,7 +10,9 @@ export type CreditCardsProps = {
 export const CreditCards: React.FC<CreditCardsProps> = ({ className }) => {
   return (
     <div className={classNames(className)}>
-      CreditCards
+      <PageContainer>
+        Dashboard
+      </PageContainer>
     </div>
   )
 }

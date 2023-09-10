@@ -1,0 +1,16 @@
+@import "@/styles/index";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $padding;
+  width: calc(100vw - $leftPanelMenu_width);
+
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1050px;
+  }
+}
