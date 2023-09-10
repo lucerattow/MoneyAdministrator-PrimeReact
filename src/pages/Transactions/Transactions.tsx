@@ -21,7 +21,9 @@ export const Transactions: React.FC<TransactionsProps> = ({ className }) => {
   return (
     <div className={classNames(className)}>
       <PageHeader title={title} />
-      Transactions
+      <div className={styles.container}>
+        Transactions
+      </div>
     </div>
   )
 }
