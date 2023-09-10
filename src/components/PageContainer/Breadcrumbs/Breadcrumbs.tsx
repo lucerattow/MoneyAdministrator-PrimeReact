@@ -1,6 +1,7 @@
 import React from "react"
 import classNames from "classnames"
 import { useNavigate } from 'react-router-dom';
+import { useAppContext } from '@/hooks';
 import { routeHome } from '@/routes';
 import { BreadCrumb } from 'primereact/breadcrumb';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
@@ -12,9 +13,10 @@ export type BreadcrumbsProps = {
 
 export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ className }) => {
   const navigate = useNavigate()
+  const { breadcrumbs } = useAppContext()
 
   const home = {
-    icon: () => <HomeOutlinedIcon />,
+    icon: () => <HomeOutlinedIcon sx={{ color: "white" }} />,
     command: () => navigate(routeHome),
   }
 
@@ -28,7 +30,7 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ className }) => {
 
   return (
     <div className={classNames(className)}>
-      <BreadCrumb className={styles.breadcrumb} home={home} model={items} />
+      <BreadCrumb className={styles.breadcrumb} home={home} model={breadcrumbs} />
     </div>
   )
 }

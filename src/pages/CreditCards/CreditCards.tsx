@@ -1,6 +1,6 @@
 import React from "react"
 import classNames from "classnames"
-import { PageContainer } from '@/components'
+import { useAppContext } from '@/hooks';
 import styles from "./CreditCards.module.scss"
 
 export type CreditCardsProps = {
@@ -8,6 +8,14 @@ export type CreditCardsProps = {
 }
 
 export const CreditCards: React.FC<CreditCardsProps> = ({ className }) => {
+  const { setBreadcrumbs } = useAppContext()
+
+  React.useEffect(() => {
+    setBreadcrumbs([
+      { label: "Tarjetas de crédito" },
+    ]);
+  }, [])
+
   return (
     <div className={classNames(className)}>
       CreditCards
