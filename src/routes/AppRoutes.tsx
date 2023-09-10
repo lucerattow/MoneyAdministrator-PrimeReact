@@ -12,6 +12,7 @@ import { Layout } from "@/Layout"
 import {
   Dashboard,
   Transactions,
+  CreditCards,
 } from "@/pages"
 // componentes
 
@@ -26,7 +27,7 @@ export const AppRoutes = () => {
             ? (
               <>
                 <Route path={routeHome} element={<Dashboard />} />
-                <Route path={routeCreditCards} element={<h1>credit cards</h1>} />
+                <Route path={routeCreditCards} element={<CreditCards />} />
                 <Route path={routeCreditCardDetails(":id")} element={<h1>credit card details</h1>} />
                 <Route path={routeTransactions} element={<Transactions />} />
               </>
