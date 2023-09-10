@@ -1,0 +1,23 @@
+@import "@/styles/index";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 $padding;
+  height: 60px;
+  border-bottom: 1px solid $color_surface_border;
+
+  .left {
+    display: flex;
+    flex-direction: row;
+
+    .button {
+      color: white;
+      width: 30px !important;
+      height: 30px !important;
+      margin-right: $padding;
+    }
+  }
+}
