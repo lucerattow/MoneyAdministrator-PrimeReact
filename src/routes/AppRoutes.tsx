@@ -9,6 +9,7 @@ import {
   routeCreditCardDetails,
 } from "@/routes"
 import { Layout } from "@/Layout"
+import { Dashboard } from "@/pages"
 // componentes
 
 export const AppRoutes = () => {
@@ -21,7 +22,7 @@ export const AppRoutes = () => {
           {user
             ? (
               <>
-                <Route path={routeHome} element={<h1>dashboard</h1>} />
+                <Route path={routeHome} element={<Dashboard />} />
                 <Route path={routeCreditCards} element={<h1>credit cards</h1>} />
                 <Route path={routeCreditCardDetails(":id")} element={<h1>credit card details</h1>} />
                 <Route path={routeTransactions} element={<h1>transactions</h1>} />
