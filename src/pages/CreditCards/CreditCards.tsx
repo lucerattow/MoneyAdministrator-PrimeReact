@@ -10,9 +10,7 @@ export type CreditCardsProps = {
 export const CreditCards: React.FC<CreditCardsProps> = ({ className }) => {
   return (
     <div className={classNames(className)}>
-      <PageContainer>
-        Dashboard
-      </PageContainer>
+      CreditCards
     </div>
   )
 }
