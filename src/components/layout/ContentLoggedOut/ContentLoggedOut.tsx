@@ -1,6 +1,5 @@
 import React from 'react'
-import { LeftPanelAuth } from "@/Layout"
-import { AuthBackground } from '@/components'
+import { AuthBackground, LeftPanelAuth } from '@/components'
 import styles from "./ContentLoggedOut.module.scss"
 
 export type ContentLoggedOutProps = {

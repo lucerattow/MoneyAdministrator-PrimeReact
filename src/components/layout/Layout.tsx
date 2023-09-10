@@ -1,7 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import { useAppContext } from '@/hooks'
-import { Header, NotificationPanel, ContentLoggedIn, ContentLoggedOut } from "@/Layout"
+import { Header, NotificationPanel, ContentLoggedIn, ContentLoggedOut } from "@/components"
 import styles from "./Layout.module.scss"
 
 export type LayoutProps = {

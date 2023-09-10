@@ -8,7 +8,7 @@ import {
   routeCreditCards,
   routeCreditCardDetails,
 } from "@/routes"
-import { Layout } from "@/Layout"
+import { Layout } from "@/components"
 import {
   Dashboard,
   Transactions,

@@ -1,7 +1,6 @@
 import React from 'react'
 import classNames from "classnames"
-import { LeftPanelMenu } from "@/Layout"
-import { PageContainer } from '@/components'
+import { PageContainer, LeftPanelMenu } from '@/components'
 import styles from "./ContentLoggedIn.module.scss"
 
 export type ContentLoggedInProps = {
