@@ -2,6 +2,7 @@ import React from 'react'
 
 //Defino el contexto
 interface AppContextType {
+  user: boolean
   //states
   notificationPanelShow: boolean
   //setters
@@ -17,8 +18,10 @@ interface AppContextProviderProps {
 
 export const AppContextProvider: React.FC<AppContextProviderProps> = ({ children }) => {
   const [notificationPanelShow, setNotificationPanelShow] = React.useState<boolean>(false)
+  const user = true;
 
   const data: AppContextType = {
+    user,
     //states
     notificationPanelShow,
     //setters

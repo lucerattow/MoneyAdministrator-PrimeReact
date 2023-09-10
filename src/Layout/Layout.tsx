@@ -1,5 +1,6 @@
 import React from 'react'
-import classNames from 'classnames';
+import classNames from 'classnames'
+import { useAppContext } from '@/hooks'
 import { Header, NotificationPanel, ContentLoggedIn, ContentLoggedOut } from "@/Layout"
 import styles from "./Layout.module.scss"
 
@@ -9,7 +10,7 @@ export type LayoutProps = {
 }
 
 export const Layout: React.FC<LayoutProps> = ({ className, children }) => {
-  const user = true
+  const { user } = useAppContext()
 
   return (
     <div className={classNames(className, styles.layout)}>

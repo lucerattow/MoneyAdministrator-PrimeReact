@@ -1,1 +1,11 @@
 @import "@/styles/index";
+
+.content {
+  display: flex;
+  height: calc(100vh - $header_height);
+  width: 100vw;
+
+  .leftPanel {
+    width: $leftPanelAuth_width;
+  }
+}

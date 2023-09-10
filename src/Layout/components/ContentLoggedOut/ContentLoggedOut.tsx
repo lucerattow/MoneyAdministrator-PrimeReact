@@ -1,4 +1,6 @@
 import React from 'react'
+import { LeftPanelAuth } from "@/Layout"
+import { AuthBackground } from '@/components'
 import styles from "./ContentLoggedOut.module.scss"
 
 export type ContentLoggedOutProps = {
@@ -9,7 +11,10 @@ export type ContentLoggedOutProps = {
 export const ContentLoggedOut: React.FC<ContentLoggedOutProps> = ({ className, children }) => {
   return (
     <div className={styles.content}>
-      {children}
+      <LeftPanelAuth className={styles.leftPanel}>
+        {children}
+      </LeftPanelAuth>
+      <AuthBackground />
     </div>
   )
 }

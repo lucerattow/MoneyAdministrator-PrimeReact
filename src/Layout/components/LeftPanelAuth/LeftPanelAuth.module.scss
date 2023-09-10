@@ -1,0 +1,10 @@
+@import "@/styles/index";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $padding;
+  background-color: $color_surface_elevated;
+  border-right: 1px solid $color_surface_border;
+}

@@ -12,7 +12,7 @@ import { Layout } from "@/Layout"
 // componentes
 
 export const AppRoutes = () => {
-  const user = true
+  const { user } = useAppContext()
 
   return (
     <BrowserRouter>

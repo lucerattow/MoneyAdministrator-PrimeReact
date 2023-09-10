@@ -1,0 +1,9 @@
+@import "@/styles/index.scss";
+
+.background {
+  flex: 1; //Ocupara todo el espacio restante del flex box
+  background-image: url("../../../assets/backgrounds/AuthBackground.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
