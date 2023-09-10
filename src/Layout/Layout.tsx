@@ -1,6 +1,6 @@
 import React from 'react'
 import classNames from 'classnames';
-import { Header, NotificationPanel } from "@/Layout"
+import { Header, NotificationPanel, ContentLoggedIn, ContentLoggedOut } from "@/Layout"
 import styles from "./Layout.module.scss"
 
 export type LayoutProps = {
@@ -9,12 +9,22 @@ export type LayoutProps = {
 }
 
 export const Layout: React.FC<LayoutProps> = ({ className, children }) => {
+  const user = true
+
   return (
     <div className={classNames(className, styles.layout)}>
       <Header />
-      <div className={styles.layout_content}>
-        {children}
-      </div>
+      {user
+        ? (
+          <ContentLoggedIn>
+            {children}
+          </ContentLoggedIn>
+        ) : (
+          <ContentLoggedOut>
+            {children}
+          </ContentLoggedOut>
+        )
+      }
       <NotificationPanel />
     </div>
   )

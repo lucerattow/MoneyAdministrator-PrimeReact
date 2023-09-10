@@ -2,8 +2,8 @@
 
 //Variables de ancho y alto
 $header_height: 64px;
-$leftPanel_width: 250px;
-$authPanel_width: 350px;
+$leftPanelMenu_width: 250px;
+$leftPanelAuth_width: 350px;
 $notificationPanel_width: 500px;
 $scrollBar_width: 10px;
 
@@ -12,14 +12,9 @@ $leftDrawer_depth: 5;
 $header_depth: 10;
 $notificationPanel_depth: 20;
 
-//surfaces
+//configuraciones esteticas
 $padding:$_defaultPadding;
 $borderRadius:$_borderRadius;
-$color_surface_light:$_lightBg;
-$color_surface_border:$_borderBg;  //input bg, border, divider
-$color_surface_menu:$_menuBg;  //menu bg
-$color_surface_elevated:$_elevatedBg;  //elevated surface
-$color_surface_ground:$_groundBg;  //ground surface
 
 //Colores principales
 $color_text:$_textColor;
@@ -30,3 +25,10 @@ $color_success:$_successButtonBg;
 $color_warning:$_warningButtonBg;
 $color_help:$_helpButtonBg;
 $color_danger:$_dangerButtonBg;
+
+//Colores superficies
+$color_surface_light:$_lightBg;
+$color_surface_border:$_borderBg;  //input bg, border, divider
+$color_surface_menu:$_menuBg;  //menu bg
+$color_surface_elevated:$_elevatedBg;  //elevated surface
+$color_surface_ground:$_groundBg;  //ground surface

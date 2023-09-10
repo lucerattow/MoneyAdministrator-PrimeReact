@@ -1,0 +1,30 @@
+@import "@/styles/index";
+
+//Es necesario que este archivo no sea un modulo ya que edita estilos de prime react
+
+.container {
+  width: 100%;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  background-color: $color_surface_elevated;
+  border-right: 1px solid $color_surface_border;
+  border-radius: 0;
+
+  .menu {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: $color_surface_elevated;
+
+    .p-menuitem {
+      .p-menuitem-link {
+        padding: 1rem;
+
+        &:hover {
+
+        }
+      }
+    }
+  }
+}
