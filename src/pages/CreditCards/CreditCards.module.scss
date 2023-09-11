@@ -2,4 +2,13 @@
 
 .container {
   padding: $padding;
+
+  .button {
+    width: 100%;
+  }
+
+  .rows {
+    margin-top: calc($padding / 2);
+    width: 100%;
+  }
 }

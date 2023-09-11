@@ -1,7 +1,12 @@
 import React from "react"
 import classNames from "classnames"
 import { useAppContext } from '@/hooks';
-import { PageHeader } from "@/components"
+import { Button } from 'primereact/button';
+import {
+  PageHeader,
+  CreditCardSmall,
+  CreditCardContainer,
+} from "@/components"
 import styles from "./CreditCards.module.scss"
 
 export type CreditCardsProps = {
@@ -22,7 +27,19 @@ export const CreditCards: React.FC<CreditCardsProps> = ({ className }) => {
     <div className={classNames(className)}>
       <PageHeader title={title} />
       <div className={styles.container}>
-        CreditCards
+        <CreditCardContainer>
+          <Button
+            className={styles.button}
+            label="Añadir tarjeta"
+          />
+        </CreditCardContainer>
+        {[1, 2, 3, 4].map((card) => (
+          <div className={styles.rows}>
+            <CreditCardContainer>
+              <CreditCardSmall />
+            </CreditCardContainer>
+          </div>
+        ))}
       </div>
     </div>
   )
