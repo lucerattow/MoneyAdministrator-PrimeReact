@@ -1,0 +1,15 @@
+@import "@/styles/index";
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  .card {
+    width: 280px;
+  }
+
+  .details {
+    margin-left: $padding;
+    flex: 1;
+  }
+}

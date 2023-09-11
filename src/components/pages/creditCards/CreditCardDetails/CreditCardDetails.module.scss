@@ -1,0 +1,48 @@
+@import "@/styles/index";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+
+  .data_row {
+    display: flex;
+    flex-direction: row;
+
+    .data_column {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .data {
+        display: flex;
+        flex-direction: column;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        width: 120px;
+
+        .title {
+          color: darken($color_text, 60%);
+        }
+
+        .value {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+
+      .margin {
+        &_left {
+          margin-left: $padding;
+        }
+
+        &_right {
+          margin-right: $padding;
+        }
+      }
+    }
+  }
+}

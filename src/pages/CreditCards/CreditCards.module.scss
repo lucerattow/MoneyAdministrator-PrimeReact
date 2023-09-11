@@ -3,8 +3,12 @@
 .container {
   padding: $padding;
 
-  .button {
-    width: 100%;
+  .tooltips {
+    width: 280px;
+
+    .button {
+      width: 100%;
+    }
   }
 
   .rows {

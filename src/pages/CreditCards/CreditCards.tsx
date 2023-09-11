@@ -5,7 +5,7 @@ import { Button } from 'primereact/button';
 import {
   PageHeader,
   CreditCardSmall,
-  CreditCardContainer,
+  CreditCardRow,
 } from "@/components"
 import styles from "./CreditCards.module.scss"
 
@@ -27,18 +27,14 @@ export const CreditCards: React.FC<CreditCardsProps> = ({ className }) => {
     <div className={classNames(className)}>
       <PageHeader title={title} />
       <div className={styles.container}>
-        <CreditCardContainer>
+        <div className={styles.tooltips}>
           <Button
             className={styles.button}
             label="Añadir tarjeta"
           />
-        </CreditCardContainer>
+        </div>
         {[1, 2, 3, 4].map((card) => (
-          <div className={styles.rows}>
-            <CreditCardContainer>
-              <CreditCardSmall />
-            </CreditCardContainer>
-          </div>
+          <CreditCardRow className={styles.rows} />
         ))}
       </div>
     </div>
