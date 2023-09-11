@@ -21,7 +21,7 @@ export const CreditCardsDetails: React.FC<CreditCardsDetailsProps> = ({ classNam
 
   return (
     <div className={classNames(className)}>
-      <PageHeader title={title} />
+      <PageHeader title={title} buttonBack />
       <div className={styles.container}>
         CreditCardsDetails
       </div>
