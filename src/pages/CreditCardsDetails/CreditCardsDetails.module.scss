@@ -1,5 +1,24 @@
 @import "@/styles/index";
 
 .container {
+  display: flex;
   padding: $padding;
+
+  .column {
+    display: flex;
+
+    &_left,
+    &_right {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &_left {
+      width: 350px;
+    }
+
+    &_right {
+      flex: 1;
+    }
+  }
 }
