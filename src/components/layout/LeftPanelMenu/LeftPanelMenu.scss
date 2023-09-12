@@ -7,7 +7,7 @@
   border-left: none;
   border-top: none;
   border-bottom: none;
-  background-color: $color_surface_elevated;
+  background-color: $color_surface_card;
   border-right: 1px solid $color_surface_border;
   border-radius: 0;
 
@@ -15,7 +15,7 @@
     width: 100%;
     border: none;
     border-radius: 0;
-    background-color: $color_surface_elevated;
+    background-color: $color_surface_card;
 
     .p-menuitem {
       .p-menuitem-link {

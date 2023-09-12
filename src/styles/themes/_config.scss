@@ -52,11 +52,13 @@ $_highlightTextColor:         rgba(255,255,255,.87);
 @import "./config/padding";
 
 // surfaces
+$bgColor:                     #2C394B;
+$bodyBgColor:                 darken($bgColor, 15%);
 $_lightBg:                    #233752;
-$_borderBg:                   #0b213f;  //input bg, border, divider
-$_menuBg:                     #091a32;  //menu bg
-$_elevatedBg:                 #071426;  //elevated surface
-$_groundBg:                   #040d19;  //ground surface
+$_borderBg:                   lighten($bgColor, 5%);  //input bg, border, divider
+$_menuBg:                     darken($bgColor, 10%);  //menu bg
+$_elevatedBg:                 $bgColor;  //elevated surface
+$_groundBg:                   #fff;//#040d19;  //ground surface
 
 // otras variables
 $_borderRadius: 4px;
