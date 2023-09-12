@@ -1,7 +1,7 @@
 import React from "react"
 import classNames from "classnames"
 import { useAppContext } from '@/hooks';
-import { PageHeader, CreditCard } from "@/components"
+import { PageHeader, CreditCard, CreditCardDetails } from "@/components"
 import styles from "./CreditCardsDetails.module.scss"
 
 export type CreditCardsDetailsProps = {
@@ -27,7 +27,8 @@ export const CreditCardsDetails: React.FC<CreditCardsDetailsProps> = ({ classNam
           <CreditCard />
         </div>
         <div className={styles.column_right}>
-
+          <CreditCardDetails />
+          <div>hola</div>
         </div>
       </div>
     </div>

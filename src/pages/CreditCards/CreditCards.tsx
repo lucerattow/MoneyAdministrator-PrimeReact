@@ -4,7 +4,6 @@ import { useAppContext } from '@/hooks';
 import { Button } from 'primereact/button';
 import {
   PageHeader,
-  CreditCardSmall,
   CreditCardRow,
 } from "@/components"
 import styles from "./CreditCards.module.scss"

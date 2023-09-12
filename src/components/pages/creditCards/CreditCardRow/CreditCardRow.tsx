@@ -13,11 +13,11 @@ export type CreditCardRowProps = {
 export const CreditCardRow: React.FC<CreditCardRowProps> = ({ className }) => {
   return (
     <div className={classNames(className, styles.container)}>
-      <div className={styles.card}>
+      <div className={styles.column_left}>
         <CreditCardSmall />
       </div>
-      <div className={styles.details}>
-        <CreditCardDetails />
+      <div className={styles.column_right}>
+        <CreditCardDetails className={styles.card_details} />
       </div>
     </div>
   )
