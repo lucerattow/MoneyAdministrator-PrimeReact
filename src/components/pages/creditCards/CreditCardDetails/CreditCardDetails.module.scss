@@ -34,11 +34,11 @@
 
       .margin {
         &_left {
-          margin-left: $padding;
+          margin-left: $gap;
         }
 
         &_right {
-          margin-right: $padding;
+          margin-right: $gap;
         }
       }
     }

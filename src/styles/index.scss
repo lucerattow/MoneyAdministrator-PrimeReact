@@ -13,8 +13,10 @@ $header_depth: 10;
 $notificationPanel_depth: 20;
 
 //configuraciones esteticas
-$padding:$_defaultPadding;
-$borderRadius:$_borderRadius;
+$gap:$_defaultPadding;
+$gap_2:calc($gap / 2);
+$gap_4:calc($gap / 4);
+$border_radius:$_borderRadius;
 
 //Colores principales
 $color_text:$_textColor;

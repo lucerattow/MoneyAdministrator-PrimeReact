@@ -5,7 +5,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 0 $padding;
+  padding: 0 $gap;
   height: 60px;
   border-bottom: 1px solid $color_surface_border;
 
@@ -17,7 +17,7 @@
       color: white;
       width: 30px !important;
       height: 30px !important;
-      margin-right: $padding;
+      margin-right: $gap;
     }
   }
 }

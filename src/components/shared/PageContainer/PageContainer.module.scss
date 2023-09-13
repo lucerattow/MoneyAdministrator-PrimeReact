@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: $padding;
+  padding: $gap;
   width: calc(100vw - $leftPanelMenu_width);
 
   .content {
@@ -14,7 +14,7 @@
     max-width: 1050px;
 
     .page {
-      border-radius: $borderRadius;
+      border-radius: $border_radius;
       background-color: $color_surface_card;
     }
   }
