@@ -35,6 +35,15 @@
 
     &_right {
       flex: 1;
+
+      .table {
+        margin-top: $gap_2;
+
+        &_header {
+          margin-left: $gap_4;
+          margin-bottom: $gap_4;
+        }
+      }
     }
   }
 }
