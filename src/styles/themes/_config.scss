@@ -3,8 +3,21 @@ $_darker: 35%;
 $_lighten: 20%;
 
 $_textColor: rgba(#fff, .87);
+$_textSecondaryColor: rgba(#fff, .60);
 $_fontFamily: Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 
+// surfaces
+$bgColor:                     #2C394B;
+$bodyBgColor:                 darken($bgColor, 15%);
+$hoverBg:rgba(255,255,255,.03) !default;
+
+$_lightBg:                    #233752;
+$_borderBg:                   lighten($bgColor, 10%);  //input bg, border, divider
+$_menuBg:                     darken($bgColor, 10%);  //menu bg
+$_elevatedBg:                 $bgColor;  //elevated surface
+$_groundBg:                   #fff;//#040d19;  //ground surface
+
+// colores core
 $_primaryColor:               #fe5722; //#ff8f00;
 $_primaryTextColor:           $_textColor; //#1c2127
 $_secondaryButtonBg:          #888f97;
@@ -14,6 +27,7 @@ $_warningButtonBg:            #ffd931;
 $_helpButtonBg:               #86e0e7;
 $_dangerButtonBg:             #ff5757;
 
+// colores botones
 $_secondaryButtonTextColor:   $_textColor;
 $_infoButtonTextColor:        $_textColor;
 $_successButtonTextColor:     $_textColor;
@@ -49,16 +63,41 @@ $_errorMessageIconColor:      $_errorMessageBorder;
 $_highlightBg:                rgba(94, 234, 212, .16);
 $_highlightTextColor:         rgba(255,255,255,.87);
 
-@import "./config/padding";
+//table
+$_tableHeaderBorderColor:$_borderBg;
+$_tableHeaderBg:$_menuBg;
+$_tableHeaderTextColor:$_textSecondaryColor;
 
-// surfaces
-$bgColor:                     #2C394B;
-$bodyBgColor:                 darken($bgColor, 15%);
-$_lightBg:                    #233752;
-$_borderBg:                   lighten($bgColor, 5%);  //input bg, border, divider
-$_menuBg:                     darken($bgColor, 10%);  //menu bg
-$_elevatedBg:                 $bgColor;  //elevated surface
-$_groundBg:                   #fff;//#040d19;  //ground surface
+$_tableHeaderCellBg:$_menuBg;
+$_tableHeaderCellTextColor:$_textColor;
+$_tableHeaderCellBorderColor:$_borderBg;
+$_tableHeaderCellHoverBg:$hoverBg;
+$_tableHeaderCellTextHoverColor:$_textColor;
+$_tableHeaderCellIconColor:$_textSecondaryColor;
+$_tableHeaderCellIconHoverColor:$_textColor;
+$_tableHeaderCellHighlightBg:$_highlightBg;
+$_tableHeaderCellHighlightTextColor:$_highlightTextColor;
+$_tableHeaderCellHighlightHoverBg:$_highlightBg;
+$_tableHeaderCellHighlightTextHoverColor:$_highlightTextColor;
+
+$_tableBodyRowBg:$_menuBg;
+$_tableBodyRowTextColor:$_textColor;
+$_tableBodyRowEvenBg:#0d1a2c;
+$_tableBodyRowHoverBg:$hoverBg;
+$_tableBodyRowTextHoverColor:$_textColor;
+$_tableBodyCellBorderColor:$_borderBg;
+
+$_tableFooterCellBg:$_menuBg;
+$_tableFooterCellTextColor:$_textColor;
+$_tableFooterCellBorderColor:$_borderBg;
+$_tableResizerHelperBg:$_primaryColor;
+$_tableDragHelperBg: rgba($_primaryColor, .16);
+
+$_tableFooterBorderColor:$_borderBg;
+$_tableFooterBg:$_menuBg;
+$_tableFooterTextColor:$_textColor;
+
+@import "./config/padding";
 
 // otras variables
 $_borderRadius: 4px;

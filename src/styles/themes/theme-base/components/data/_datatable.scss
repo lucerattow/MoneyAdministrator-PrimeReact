@@ -84,7 +84,7 @@
             &:not(.p-sortable-disabled):hover {
                 background: $tableHeaderCellHighlightHoverBg;
                 color: $tableHeaderCellHighlightTextColor;
-    
+
                 .p-sortable-column-icon {
                     color: $tableHeaderCellHighlightTextColor;
                 }
@@ -313,14 +313,14 @@
         .p-datatable-tbody {
             > tr.p-row-odd {
                 background: $tableBodyRowEvenBg;
-    
+
                 &.p-highlight {
                     background: $highlightBg;
                     color: $highlightTextColor;
-    
+
                     .p-row-toggler {
                         color: $highlightTextColor;
-    
+
                         &:hover {
                             color: $highlightTextColor;
                         }
@@ -381,4 +381,18 @@
 
 .p-datatable-drag-selection-helper {
     background: $tableDragHelperBg;
+}
+
+//customization
+
+.p-datatable:not(:has(.p-datatable-tfoot)):not(:has(.p-paginator-bottom)) .p-datatable-tbody > tr:last-child > td {
+    border-bottom: none !important;
+}
+
+.p-datatable .p-paginator-bottom {
+    border-bottom: none !important;
+}
+
+.p-datatable .p-datatable-tfoot > tr > td {
+    border-bottom: none !important;
 }
