@@ -14,7 +14,23 @@
     }
 
     &_left {
-      width: 350px;
+      margin-right: $gap;
+      width: 320px;
+
+      .buttons {
+        margin-top: $gap;
+        width: 100%;
+        display: flex;
+
+
+        .button {
+          flex: 1;
+        }
+      }
+
+      .tree_resumes {
+        margin-top: $gap_4;
+      }
     }
 
     &_right {

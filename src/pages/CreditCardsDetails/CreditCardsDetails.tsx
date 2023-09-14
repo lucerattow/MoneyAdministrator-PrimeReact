@@ -8,6 +8,7 @@ import {
   PageHeader,
   CreditCard,
   CreditCardDetails,
+  ResumeTreeList,
 } from "@/components"
 import styles from "./CreditCardsDetails.module.scss"
 
@@ -16,6 +17,7 @@ export type CreditCardsDetailsProps = {
 }
 
 export const CreditCardsDetails: React.FC<CreditCardsDetailsProps> = ({ className }) => {
+
   const { setBreadcrumbs } = useAppContext()
   const title = "Detalles de tarjeta"
 
@@ -50,6 +52,7 @@ export const CreditCardsDetails: React.FC<CreditCardsDetailsProps> = ({ classNam
               onClick={handleCreateClick}
             />
           </span>
+          <ResumeTreeList className={styles.tree_resumes} />
         </div>
         <div className={styles.column_right}>
           <CreditCardDetails />
