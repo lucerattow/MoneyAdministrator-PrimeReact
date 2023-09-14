@@ -1,8 +1,8 @@
 import React from "react"
 import classNames from "classnames"
 import { Button } from 'primereact/button'
-import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
-import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
+import EditRoundedIcon from '@mui/icons-material/EditRounded';
+import Delete from "@mui/icons-material/Delete"
 import mastercardLogo from "@/assets/logos/mastercard.svg"
 import visaLogo from "@/assets/logos/visa.svg"
 import hsbcLogo from "@/assets/logos/bank_hsbc.svg"
@@ -32,11 +32,11 @@ export const CreditCard: React.FC<CreditCardProps> = ({ className }) => {
 
   return (
     <div className={classNames(className, styles.container)}>
-      <div className={styles.row_top}>
-        <div className={styles.buttons}>
+      <div className={styles.row}>
+        <div className={styles.actions}>
           <Button
             className={styles.button}
-            icon={() => <DeleteOutlineOutlinedIcon />}
+            icon={() => <Delete />}
             onClick={handleDeleteClick}
             severity="danger"
             rounded
@@ -44,7 +44,7 @@ export const CreditCard: React.FC<CreditCardProps> = ({ className }) => {
           />
           <Button
             className={styles.button}
-            icon={() => <EditOutlinedIcon />}
+            icon={() => <EditRoundedIcon />}
             onClick={handleEditClick}
             severity="secondary"
             rounded
@@ -53,12 +53,12 @@ export const CreditCard: React.FC<CreditCardProps> = ({ className }) => {
         </div>
         <img className={styles.bank_logo} src={hsbcLogo} alt="logo" />
       </div>
-      <div className={styles.row_middle}>
+      <div className={styles.row}>
         <img className={styles.chip} src={chipImg} alt="logo" />
         <img className={styles.bank_logo} src={contactlessImg} alt="logo" />
       </div>
-      <div className={styles.row_bottom}>
-        <div className={styles.card_data}>
+      <div className={styles.row}>
+        <div className={styles.data}>
           <span className={styles.numbers}>**** **** **** 1234</span>
           <span className={styles.name}>Lucas Ceratto</span>
         </div>
