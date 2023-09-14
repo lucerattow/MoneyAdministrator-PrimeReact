@@ -1,0 +1,11 @@
+@import "@/styles/index";
+
+.container {
+  background-color: $color_surface_menu;
+  border-radius: $border_radius;
+
+  .header {
+    padding: $gap_2 $gap;
+    border-bottom: 1px solid $color_surface_border;
+  }
+}

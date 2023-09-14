@@ -1,0 +1,57 @@
+@import "@/styles/index";
+
+.item {
+  position: relative;
+  overflow: hidden;
+  padding: $gap_2;
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(255,255,255,.03);
+
+    > .actions {
+      visibility: visible;
+      opacity: 0.2;
+    }
+  }
+
+  .left {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+
+    .icon {
+      height: 24px;
+      width: 24px;
+      margin-right: $gap_2;
+    }
+  }
+
+  .actions {
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out;
+
+    &:hover {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.children {
+  overflow: hidden;
+  transition: height 0.2s;
+
+  &.collapsed {
+    height: 0 !important;
+  }
+}
+
+:export {
+  var_padding_right: $gap_2;
+}
