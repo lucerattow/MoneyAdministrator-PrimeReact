@@ -64,13 +64,13 @@ $_highlightBg:                rgba(94, 234, 212, .16);
 $_highlightTextColor:         rgba(255,255,255,.87);
 
 //table
-$_tableHeaderBorderColor:$_borderBg;
+$_tableHeaderBorderColor:$_elevatedBg;
 $_tableHeaderBg:$_menuBg;
 $_tableHeaderTextColor:$_textSecondaryColor;
 
 $_tableHeaderCellBg:$_menuBg;
 $_tableHeaderCellTextColor:$_textColor;
-$_tableHeaderCellBorderColor:$_borderBg;
+$_tableHeaderCellBorderColor:$_elevatedBg;
 $_tableHeaderCellHoverBg:$hoverBg;
 $_tableHeaderCellTextHoverColor:$_textColor;
 $_tableHeaderCellIconColor:$_textSecondaryColor;
@@ -85,15 +85,15 @@ $_tableBodyRowTextColor:$_textColor;
 $_tableBodyRowEvenBg:#0d1a2c;
 $_tableBodyRowHoverBg:$hoverBg;
 $_tableBodyRowTextHoverColor:$_textColor;
-$_tableBodyCellBorderColor:$_borderBg;
+$_tableBodyCellBorderColor:$_elevatedBg;
 
 $_tableFooterCellBg:$_menuBg;
 $_tableFooterCellTextColor:$_textColor;
-$_tableFooterCellBorderColor:$_borderBg;
+$_tableFooterCellBorderColor:$_elevatedBg;
 $_tableResizerHelperBg:$_primaryColor;
 $_tableDragHelperBg: rgba($_primaryColor, .16);
 
-$_tableFooterBorderColor:$_borderBg;
+$_tableFooterBorderColor:$_elevatedBg;
 $_tableFooterBg:$_menuBg;
 $_tableFooterTextColor:$_textColor;
 
