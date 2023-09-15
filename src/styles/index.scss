@@ -29,8 +29,14 @@ $color_help:$_helpButtonBg;
 $color_danger:$_dangerButtonBg;
 
 //Colores superficies
+$body_bg_color: $bodyBgColor;
 $color_surface_light:$_lightBg;
 $color_surface_border:$_borderBg;  //input bg, border, divider
 $color_surface_menu:$_menuBg;  //menu bg
 $color_surface_card:$_elevatedBg;  //elevated surface
 $color_surface_ground:$_groundBg;  //ground surface
+
+//Scrollbar
+$color_scroll_bg: $color_surface_ground;
+$color_scroll_picker: $color_surface_menu;
+$scroll_width: 8px;

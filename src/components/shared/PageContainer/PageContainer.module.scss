@@ -1,11 +1,27 @@
 @import "@/styles/index";
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: $gap;
   width: calc(100vw - $leftPanelMenu_width);
+  height: calc(100vh - $header_height);
+  overflow-y: scroll;
+
+  //Firefox Scrollbar
+  scrollbar-width: thin; /* thin o auto */
+  scrollbar-color: $color_surface_menu $body_bg_color;
+  //IE Scrollbar
+  scrollbar-face-color: $color_surface_menu;
+  scrollbar-track-color: $body_bg_color;
+
+  &::-webkit-scrollbar {
+    width: $scroll_width; /* Ancho de la barra de desplazamiento */
+    background-color: $body_bg_color; /* Color de fondo de la pista */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color_surface_menu; /* Color de la barra de desplazamiento */
+    border-radius: 5px; /* Borde redondeado */
+  }
 
   .content {
     margin-left: auto;
