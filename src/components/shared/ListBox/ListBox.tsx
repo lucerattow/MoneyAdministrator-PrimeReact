@@ -7,9 +7,10 @@ export type ListBoxProps = {
   className?: string
   items: ListItemNode[]
   title?: string
+  expanded?: boolean
 }
 
-export const ListBox: React.FC<ListBoxProps> = ({ className, items, title }) => {
+export const ListBox: React.FC<ListBoxProps> = ({ className, items, title, expanded = false }) => {
   return (
     <div className={classNames(className, styles.container)}>
       {title &&
@@ -18,7 +19,7 @@ export const ListBox: React.FC<ListBoxProps> = ({ className, items, title }) => 
         </div>
       }
       {items.map((item) => (
-        <ListItem item={item} />
+        <ListItem item={item} expanded={expanded} />
       ))}
     </div>
   )

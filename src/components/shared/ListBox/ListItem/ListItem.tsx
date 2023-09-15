@@ -16,13 +16,14 @@ export type ListItemProps = {
   className?: string
   item: ListItemNode
   indent?: number
+  expanded?: boolean
 }
 
-export const ListItem: React.FC<ListItemProps> = ({ className, item, indent = 0 }) => {
-  const [expanded, setExpanded] = React.useState<boolean>(true)
+export const ListItem: React.FC<ListItemProps> = ({ className, item, indent = 0, expanded = false }) => {
+  const [isExpanded, setIsExpanded] = React.useState<boolean>(expanded)
 
   const getArrowIcon = () => {
-    if (expanded) {
+    if (isExpanded) {
       return <KeyboardArrowDownRoundedIcon />
     }
 
@@ -31,7 +32,7 @@ export const ListItem: React.FC<ListItemProps> = ({ className, item, indent = 0 
 
   const handleExpandClick = (e: React.MouseEvent<HTMLDivElement>) => {
     e.stopPropagation()
-    setExpanded(!expanded)
+    setIsExpanded(!isExpanded)
   }
 
   return (
@@ -64,7 +65,7 @@ export const ListItem: React.FC<ListItemProps> = ({ className, item, indent = 0 
         }
       </div>
       {item.childrens && (
-        <div className={classNames(styles.children, expanded ? styles.expanded : styles.collapsed)} style={{ height: item.childrens.length * 44 }}>
+        <div className={classNames(styles.children, isExpanded ? styles.expanded : styles.collapsed)} style={{ height: item.childrens.length * 44 }}>
           {item.childrens.map((item) => (
             <ListItem item={item} indent={indent + 1} />
           ))}
