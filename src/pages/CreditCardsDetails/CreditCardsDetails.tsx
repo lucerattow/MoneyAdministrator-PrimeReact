@@ -10,6 +10,7 @@ import {
   CreditCardDetails,
   ResumeTreeList,
   TablePayments,
+  TableResume,
 } from "@/components"
 import styles from "./CreditCardsDetails.module.scss"
 
@@ -60,6 +61,10 @@ export const CreditCardsDetails: React.FC<CreditCardsDetailsProps> = ({ classNam
           <div className={styles.table}>
             <h3 className={styles.table_header}>Pagos registrados</h3>
             <TablePayments />
+          </div>
+          <div className={styles.table}>
+            <h3 className={styles.table_header}>Detalles del resumen</h3>
+            <TableResume />
           </div>
         </div>
       </div>
