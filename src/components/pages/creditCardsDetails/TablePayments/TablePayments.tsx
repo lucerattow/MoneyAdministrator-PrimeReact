@@ -2,7 +2,7 @@ import React from "react"
 import classNames from "classnames"
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
-import { data } from './TablePayments.Data';
+import { data } from './TablePayments.data';
 import styles from "./TablePayments.module.scss"
 
 export type TablePaymentsProps = {
