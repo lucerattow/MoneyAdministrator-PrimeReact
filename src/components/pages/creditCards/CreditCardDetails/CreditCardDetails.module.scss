@@ -22,7 +22,7 @@
         width: 120px;
 
         .title {
-          color: darken($color_text, 60%);
+          color: $color_text_secondary;
         }
 
         .value {
