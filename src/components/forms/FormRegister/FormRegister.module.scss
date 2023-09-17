@@ -1,0 +1,14 @@
+@import "@/styles/index";
+
+.container {
+  width: 100%;
+
+  .input {
+    margin-bottom: $gap_4;
+  }
+
+  .button {
+    margin-top: 16px;
+    width: 100%;
+  }
+}
