@@ -5,7 +5,11 @@ import { useForm, SubmitHandler } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { useAppContext } from '@/hooks'
 import { routeHome } from "@/routes"
-import { InputText } from "@/components"
+import { Button } from 'primereact/button'
+import {
+  InputText,
+  InputPassword
+} from "@/components"
 import { LoginFormInput, validationSchema } from "./FormLogin.validations"
 import styles from "./FormLogin.module.scss"
 import DeleteOutlineRoundedIcon from '@mui/icons-material/DeleteOutlineRounded';
@@ -23,6 +27,7 @@ export const FormLogin: React.FC<FormLoginProps> = ({ className }) => {
   })
 
   const onSubmit: SubmitHandler<LoginFormInput> = async (data) => {
+    console.log("submit")
     setLoading(true)
     setTimeout(() => {
       setUser(true)
@@ -36,11 +41,23 @@ export const FormLogin: React.FC<FormLoginProps> = ({ className }) => {
       <InputText
         name="email"
         label="Correo Electrónico"
-        isTouched={touchedFields["email"] || false}
         control={control}
         errors={errors}
         autoComplete="email"
         autoFocus
+      />
+      <InputPassword
+        name="password"
+        label="Contraseña"
+        control={control}
+        errors={errors}
+        autoComplete="password"
+      />
+      <Button
+        type="submit"
+        className={styles.button}
+        loading={loading}
+        label="Iniciar sesión"
       />
     </form>
   )
