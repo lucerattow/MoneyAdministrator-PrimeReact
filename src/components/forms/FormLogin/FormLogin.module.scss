@@ -3,6 +3,10 @@
 .container {
   width: 100%;
 
+  .input {
+    margin-bottom: $gap_4;
+  }
+
   .button {
     width: 100%;
   }

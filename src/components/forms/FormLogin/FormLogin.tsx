@@ -22,8 +22,10 @@ export const FormLogin: React.FC<FormLoginProps> = ({ className }) => {
   const [loading, setLoading] = React.useState<boolean>(false)
   const navigate = useNavigate()
   const { setUser } = useAppContext()
-  const { control, handleSubmit, formState: { errors, touchedFields } } = useForm<LoginFormInput>({
+  const { control, handleSubmit, formState: { errors } } = useForm<LoginFormInput>({
     resolver: yupResolver(validationSchema),
+    mode: "onSubmit",
+    reValidateMode: "onBlur"
   })
 
   const onSubmit: SubmitHandler<LoginFormInput> = async (data) => {
@@ -39,6 +41,7 @@ export const FormLogin: React.FC<FormLoginProps> = ({ className }) => {
   return (
     <form className={classNames(className, styles.container)} onSubmit={handleSubmit(onSubmit)}>
       <InputText
+        className={styles.input}
         name="email"
         label="Correo Electrónico"
         control={control}
@@ -47,6 +50,7 @@ export const FormLogin: React.FC<FormLoginProps> = ({ className }) => {
         autoFocus
       />
       <InputPassword
+        className={styles.input}
         name="password"
         label="Contraseña"
         control={control}
