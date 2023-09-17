@@ -54,6 +54,7 @@ export const InputText: React.FC<InputTextProps<any>> = ({
           )}>
             {leftIcon}
             <InpText
+              {...field}
               className={classNames(
                 "p-inputtext-sm",
                 styles.input,
