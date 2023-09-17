@@ -47,6 +47,7 @@
 .p-input-icon-left > .p-input-prefix {
     left: nth($inputPadding, 2);
     color: $inputIconColor;
+    margin-top: -11px;
 }
 
 .p-input-icon-left > .p-inputtext {
@@ -62,6 +63,7 @@
 .p-input-icon-right > .p-input-suffix {
     right: nth($inputPadding, 2);
     color: $inputIconColor;
+    margin-top: -11px;
 }
 
 .p-input-icon-right > .p-inputtext {
@@ -79,7 +81,7 @@
         &:enabled:hover {
             background-color: $inputFilledHoverBg;
         }
-    
+
         &:enabled:focus {
             background-color: $inputFilledFocusBg;
         }

@@ -100,7 +100,7 @@ $actionIconBorderRadius: 50% !default;
 //input field (e.g. inputtext, spinner, inputmask)
 $inputPadding:$_inputPadding !default;
 $inputTextFontSize:1rem !default;
-$inputBg:$shade900 !default;
+$inputBg:$_groundBg !default;
 $inputTextColor:$shade000 !default;
 $inputIconColor:$shade100 !default;
 $inputBorder:1px solid $shade600 !default;
@@ -834,8 +834,8 @@ $speedDialActionWidth: 3rem !default;
 $speedDialActionHeight: 3rem !default;
 $speedDialActionBg: $shade000 !default;
 $speedDialActionHoverBg: $shade100 !default;
-$speedDialActionTextColor: $shade900 !default;
-$speedDialActionTextHoverColor: $shade900 !default;
+$speedDialActionTextColor: $_groundBg !default;
+$speedDialActionTextHoverColor: $_groundBg !default;
 
 //dock
 $dockActionWidth: 4rem !default;
@@ -865,7 +865,7 @@ $imagePreviewActionIconBorderRadius:50% !default;
 
 :root {
     --surface-a:#{$_elevatedBg};
-    --surface-b:#{$shade900};
+    --surface-b:#{$_groundBg};
     --surface-c:#{$hoverBg};
     --surface-d:#{$shade600};
     --surface-e:#{$_elevatedBg};

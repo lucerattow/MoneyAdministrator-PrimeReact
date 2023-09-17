@@ -15,7 +15,7 @@ $_lightBg:                    #233752;
 $_borderBg:                   lighten($bgColor, 10%);  //input bg, border, divider
 $_menuBg:                     darken($bgColor, 10%);  //menu bg
 $_elevatedBg:                 $bgColor;  //elevated surface
-$_groundBg:                   #fff;//#040d19;  //ground surface
+$_groundBg:                   darken($bgColor, 15%);//#040d19;  //ground surface
 
 // colores core
 $_primaryColor:               #fe5722; //#ff8f00;

@@ -1,4 +1,5 @@
 export * from "./backgrounds/AuthBackground/AuthBackground"
+export * from "./controls/InputText/InputText"
 export * from "./layout/ContentLoggedIn/ContentLoggedIn"
 export * from "./layout/ContentLoggedOut/ContentLoggedOut"
 export * from "./layout/Header/Header"
