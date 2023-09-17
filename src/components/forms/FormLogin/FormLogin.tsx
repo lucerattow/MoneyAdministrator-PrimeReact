@@ -35,7 +35,7 @@ export const FormLogin: React.FC<FormLoginProps> = ({ className }) => {
       setUser(true)
       navigate(routeHome)
     }, 5000)
-    setLoading(false)
+    //TODO: cambiar este setTimeout por la funcion de login real
   }
 
   return (
