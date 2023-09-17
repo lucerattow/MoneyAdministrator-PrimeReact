@@ -1,12 +1,13 @@
 import { useNavigate } from 'react-router-dom';
+import { useAppContext } from '@/hooks';
 import { routeAccount } from "@/routes"
 
 export function useMenuAvatar() {
   const navigate = useNavigate();
+  const { setUser } = useAppContext()
 
   const handleSignOut = () => {
-    console.log("cerrar sesión");
-    // TODO: implementar la lógica de cierre de sesión
+    setUser(false)
   };
 
   const items = [

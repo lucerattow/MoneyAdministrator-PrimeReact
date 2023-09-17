@@ -3,11 +3,12 @@ import { MenuItem } from 'primereact/menuitem'
 
 //Defino el contexto
 interface AppContextType {
-  user: boolean
   //states
+  user: boolean
   notificationPanelShow: boolean
   breadcrumbs: MenuItem[]
   //setters
+  setUser: React.Dispatch<React.SetStateAction<boolean>>
   setNotificationPanelShow: React.Dispatch<React.SetStateAction<boolean>>
   setBreadcrumbs: React.Dispatch<React.SetStateAction<MenuItem[]>>
 }
@@ -21,15 +22,16 @@ interface AppContextProviderProps {
 
 export const AppContextProvider: React.FC<AppContextProviderProps> = ({ children }) => {
   const [notificationPanelShow, setNotificationPanelShow] = React.useState<boolean>(false)
+  const [user, setUser] = React.useState<boolean>(false)
   const [breadcrumbs, setBreadcrumbs] = React.useState<MenuItem[]>([])
-  const user = true;
 
   const data: AppContextType = {
-    user,
     //states
+    user,
     notificationPanelShow,
     breadcrumbs,
     //setters
+    setUser,
     setNotificationPanelShow,
     setBreadcrumbs,
   };
