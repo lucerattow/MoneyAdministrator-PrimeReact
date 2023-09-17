@@ -15,6 +15,7 @@ import {
   CreditCards,
   CreditCardsDetails,
   Login,
+  Register
 } from "@/pages"
 // componentes
 
@@ -36,7 +37,7 @@ export const AppRoutes = () => {
             ) : (
               <>
                 <Route path={routeHome} element={<Login />} />
-                <Route path={routeRegister} element={<h1>registrarse</h1>} />
+                <Route path={routeRegister} element={<Register />} />
               </>
             )
           }
