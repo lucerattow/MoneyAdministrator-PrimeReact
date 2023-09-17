@@ -60,6 +60,7 @@ export const InputPassword: React.FC<InputPasswordProps<any>> = ({
           )}>
             {leftIcon}
             <InpText
+              {...field}
               className={classNames(
                 "p-inputtext-sm",
                 styles.input,
