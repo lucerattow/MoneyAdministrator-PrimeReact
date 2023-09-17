@@ -9,7 +9,6 @@ export type InputTextProps<T extends FieldValues> = {
   name: keyof T
   label: string
   control: Control<T>
-  isTouched: boolean;
   errors: FieldErrors<T>
   defaultValue?: string
   autoFocus?: boolean
@@ -23,7 +22,6 @@ export const InputText: React.FC<InputTextProps<any>> = ({
   name,
   label,
   control,
-  isTouched,
   errors,
   defaultValue = "",
   autoFocus = false,
@@ -34,7 +32,7 @@ export const InputText: React.FC<InputTextProps<any>> = ({
   const errorMessage = errors[name as string]?.message as string
   const _name = name as string
 
-  const isFormFieldInvalid = () => !!(isTouched && errorMessage);
+  const isFormFieldInvalid = () => !!errorMessage;
 
   const FormErrorMessage = () => isFormFieldInvalid() ? <small className="p-error">{errorMessage}</small> : <small className="p-error">&nbsp;</small>;
 
