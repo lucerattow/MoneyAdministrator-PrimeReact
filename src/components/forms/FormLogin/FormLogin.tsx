@@ -12,7 +12,6 @@ import {
 } from "@/components"
 import { LoginFormInput, validationSchema } from "./FormLogin.validations"
 import styles from "./FormLogin.module.scss"
-import DeleteOutlineRoundedIcon from '@mui/icons-material/DeleteOutlineRounded';
 
 export type FormLoginProps = {
   className?: string
@@ -29,7 +28,6 @@ export const FormLogin: React.FC<FormLoginProps> = ({ className }) => {
   })
 
   const onSubmit: SubmitHandler<LoginFormInput> = async (data) => {
-    console.log("submit")
     setLoading(true)
     setTimeout(() => {
       setUser(true)
