@@ -58,8 +58,8 @@ export const FormLogin: React.FC<FormLoginProps> = ({ className }) => {
         autoComplete="password"
       />
       <Button
-        type="submit"
         className={styles.button}
+        type="submit"
         loading={loading}
         label="Iniciar sesión"
       />
