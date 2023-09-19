@@ -19,6 +19,7 @@ export * from "./pages/creditCardsDetails/ResumeTreeList/ResumeTreeButtons/Resum
 export * from "./pages/creditCardsDetails/ResumeTreeList/ResumeTreeList"
 export * from "./pages/creditCardsDetails/TablePayments/TablePayments"
 export * from "./pages/creditCardsDetails/TableResume/TableResume"
+export * from "./pages/transactions/TableTransactions/TableTransactions"
 export * from "./shared/Breadcrumbs/Breadcrumbs"
 export * from "./shared/ListBox/ListBox"
 export * from "./shared/ListBox/ListItem/ListItem"
