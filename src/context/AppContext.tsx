@@ -22,7 +22,7 @@ interface AppContextProviderProps {
 
 export const AppContextProvider: React.FC<AppContextProviderProps> = ({ children }) => {
   const [notificationPanelShow, setNotificationPanelShow] = React.useState<boolean>(false)
-  const [user, setUser] = React.useState<boolean>(false)
+  const [user, setUser] = React.useState<boolean>(true)
   const [breadcrumbs, setBreadcrumbs] = React.useState<MenuItem[]>([])
 
   const data: AppContextType = {
