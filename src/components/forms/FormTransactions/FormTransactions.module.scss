@@ -1,0 +1,10 @@
+@import "@/styles/index";
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+  .date {
+    width: 150px;
+  }
+}
