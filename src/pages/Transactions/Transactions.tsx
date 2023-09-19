@@ -1,7 +1,11 @@
 import React from "react"
 import classNames from "classnames"
 import { useAppContext } from '@/hooks';
-import { PageHeader } from "@/components"
+import {
+  PageHeader,
+  FormTransactions,
+  TableTransactions
+} from "@/components"
 import styles from "./Transactions.module.scss"
 
 export type TransactionsProps = {
@@ -22,7 +26,8 @@ export const Transactions: React.FC<TransactionsProps> = ({ className }) => {
     <div className={classNames(className)}>
       <PageHeader title={title} />
       <div className={styles.container}>
-        Transactions
+        <FormTransactions />
+        <TableTransactions />
       </div>
     </div>
   )
