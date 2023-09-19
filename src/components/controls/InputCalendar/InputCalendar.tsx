@@ -1,15 +1,10 @@
 import React from "react"
 import classNames from "classnames"
 import { Controller, Control, FieldValues, FieldErrors } from 'react-hook-form';
-import { InputText as InpText } from 'primereact/inputtext'
-import { Button } from 'primereact/button';
-import {
-  Visibility,
-  VisibilityOff
-} from '@mui/icons-material'
-import styles from "./InputPassword.module.scss"
+import { Calendar } from 'primereact/calendar';
+import styles from "./InputCalendar.module.scss"
 
-export type InputPasswordProps<T extends FieldValues> = {
+export type InputCalendarProps<T extends FieldValues> = {
   className?: string
   name: keyof T
   label: string
@@ -18,10 +13,12 @@ export type InputPasswordProps<T extends FieldValues> = {
   defaultValue?: string
   autoFocus?: boolean
   autoComplete?: string
-  leftIcon?: React.ReactNode
+  dateFormat?: string
+  showButtonBar?: boolean
+  icon?: React.ReactNode
 }
 
-export const InputPassword: React.FC<InputPasswordProps<any>> = ({
+export const InputCalendar: React.FC<InputCalendarProps<any>> = ({
   className,
   name,
   label,
@@ -30,13 +27,12 @@ export const InputPassword: React.FC<InputPasswordProps<any>> = ({
   defaultValue = "",
   autoFocus = false,
   autoComplete = "",
-  leftIcon,
+  dateFormat = "dd/mm/yy",
+  showButtonBar = false,
+  icon,
 }) => {
-  const [show, setShow] = React.useState<boolean>(false)
   const errorMessage = errors[name as string]?.message as string
   const _name = name as string
-
-  const handleVisibilityClick = () => setShow(!show)
 
   const isFormFieldInvalid = () => !!errorMessage;
 
@@ -48,35 +44,31 @@ export const InputPassword: React.FC<InputPasswordProps<any>> = ({
       control={control}
       defaultValue={defaultValue}
       render={({ field }) => (
-        <div className={classNames(
-          className,
-          styles.container
-        )}>
+        <div className={styles.container}>
           <label htmlFor={_name}>{label}</label>
-          <span className={classNames(
+          <div className={classNames(
             styles.input,
-            "p-inputgroup",
-            leftIcon && "p-input-icon-left"
+            icon && "p-inputgroup"
           )}>
-            {leftIcon}
-            <InpText
+            <Calendar
               {...field}
               className={classNames(
+                className,
                 styles.input,
                 isFormFieldInvalid() && "p-invalid"
               )}
-              type={show ? 'text' : 'password'}
-              id={_name}
+              inputId={_name}
               name={_name}
-              autoComplete={autoComplete}
+              dateFormat="dd/mm/yy"
               autoFocus={autoFocus}
+              showButtonBar={showButtonBar}
             />
-            <Button
-              icon={() => show ? <VisibilityOff /> : <Visibility />}
-              onClick={handleVisibilityClick}
-              size="small"
-            />
-          </span>
+            {icon && (
+              <span className="p-inputgroup-addon">
+                {icon}
+              </span>
+            )}
+          </div>
           {FormErrorMessage()}
         </div>
       )}
@@ -84,4 +76,4 @@ export const InputPassword: React.FC<InputPasswordProps<any>> = ({
   )
 }
 
-export default InputPassword
+export default InputCalendar

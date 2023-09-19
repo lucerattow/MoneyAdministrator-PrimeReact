@@ -1,4 +1,5 @@
 export * from "./backgrounds/AuthBackground/AuthBackground"
+export * from "./controls/InputCalendar/InputCalendar"
 export * from "./controls/InputPassword/InputPassword"
 export * from "./controls/InputText/InputText"
 export * from "./forms/FormLogin/FormLogin"

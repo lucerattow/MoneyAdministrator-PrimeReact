@@ -4,33 +4,23 @@ $_scaleSM:0.875;
 $_scaleLG:1.25;
 
 // padding input
-$_inputPadding:.75rem .75rem;
-$_inputListPadding:.75rem 0;
-$_inputListItemPadding:.75rem 1.25rem;
-$_inputListHeaderPadding:.75rem 2rem;
+$_inputPadding:.65rem .65rem;
+$_inputListPadding:.65rem 0;
+$_inputListItemPadding:.65rem 1.25rem;
+$_inputListHeaderPadding:.65rem 2rem;
 
 // padding button
-$_buttonPadding:.5rem .75rem;
-$_buttonIconOnlyPadding:.75rem 0;
-
-// padding calendar
-$_calendarPadding:.5rem;
-$_calendarHeaderPadding:.5rem;
-$_calendarHeaderCellPadding:.5rem;
-$_calendarCellDatePadding:.5rem;
-$_calendarButtonBarPadding:1rem 0;
-$_calendarTimePickerPadding:.5rem;
-$_calendarTimePickerElementPadding:0 .5rem;
-$_calendarCellDatePaddingSM:0;
+$_buttonPadding:.5rem .65rem;
+$_buttonIconOnlyPadding:.65rem 0;
 
 // padding input switch slider
 $_inputSwitchSliderPadding:.25rem;
 
 // padding panel
 $_panelHeaderPadding:1.25rem;
-$_panelToggleableHeaderPadding:.75rem 1.25rem;
+$_panelToggleableHeaderPadding:.65rem 1.25rem;
 $_panelContentPadding:1.25rem;
-$_panelFooterPadding:0.75rem 1.25rem;
+$_panelFooterPadding:0.65rem 1.25rem;
 
 // padding file upload
 $_fileUploadContentPadding:2rem 1rem;
@@ -68,7 +58,7 @@ $_timelineVerticalEventContentPadding:0 1rem;
 $_timelineHorizontalEventContentPadding:1rem 0;
 
 // padding messages
-$_messagePadding:1.25rem 1.75rem;
+$_messagePadding:1.25rem 1.65rem;
 
 // padding toast
 $_toastPadding:1rem;
@@ -82,8 +72,8 @@ $_dialogFooterPadding:0 1.5rem 1.5rem 1.5rem;
 $_confirmPopupFooterPadding:0 1.25rem 1.25rem 1.25rem;
 
 // padding menu (e.g. menu, menubar, tieredmenu)
-$_menuitemPadding:.6rem .75rem;
-$_submenuHeaderPadding:.6rem .75rem;
+$_menuitemPadding:.6rem .65rem;
+$_submenuHeaderPadding:.6rem .65rem;
 $_verticalMenuPadding:.25rem 0;
 
 // padding breadcrum

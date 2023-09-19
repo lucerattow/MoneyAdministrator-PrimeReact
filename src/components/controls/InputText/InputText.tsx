@@ -56,7 +56,6 @@ export const InputText: React.FC<InputTextProps<any>> = ({
             <InpText
               {...field}
               className={classNames(
-                "p-inputtext-sm",
                 styles.input,
                 isFormFieldInvalid() && "p-invalid"
               )}

@@ -1,10 +1,10 @@
 .p-inputgroup-addon {
+    height: 100%;
     background: $inputGroupBg;
     color: $inputGroupTextColor;
     border-top: $inputBorder;
     border-left: $inputBorder;
     border-bottom: $inputBorder;
-    padding: $inputPadding;
     min-width: $inputGroupAddOnMinWidth;
 
     &:last-child {
@@ -50,7 +50,7 @@
 .p-inputgroup-addon:last-child,
 .p-inputgroup button:last-child,
 .p-inputgroup input:last-child,
-.p-inputgroup > .p-inputwrapper:last-child, 
+.p-inputgroup > .p-inputwrapper:last-child,
 .p-inputgroup > .p-inputwrapper:last-child > .p-inputtext {
     border-top-right-radius: $borderRadius;
     border-bottom-right-radius: $borderRadius;
