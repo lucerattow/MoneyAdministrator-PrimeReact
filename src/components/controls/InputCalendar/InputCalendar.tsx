@@ -6,6 +6,7 @@ import styles from "./InputCalendar.module.scss"
 
 export type InputCalendarProps<T extends FieldValues> = {
   className?: string
+  inputClassName?: string
   name: keyof T
   label: string
   control: Control<T>
@@ -20,6 +21,7 @@ export type InputCalendarProps<T extends FieldValues> = {
 
 export const InputCalendar: React.FC<InputCalendarProps<any>> = ({
   className,
+  inputClassName,
   name,
   label,
   control,
@@ -49,7 +51,11 @@ export const InputCalendar: React.FC<InputCalendarProps<any>> = ({
           <div className={classNames(icon && "p-inputgroup")}>
             <Calendar
               {...field}
-              className={classNames(isFormFieldInvalid() && "p-invalid", styles.input)}
+              className={classNames(
+                inputClassName,
+                styles.input,
+                isFormFieldInvalid() && "p-invalid"
+              )}
               inputId={_name}
               name={_name}
               dateFormat="dd/mm/yy"
