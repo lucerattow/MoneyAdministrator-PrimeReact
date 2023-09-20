@@ -1,5 +1,5 @@
-import "./styles/themes/theme.scss"               //estilos tematicos
 import "primereact/resources/primereact.min.css"; //estilos core
+import "./styles/themes/theme.scss"               //estilos tematicos
 import 'primeicons/primeicons.css';               //estilos de iconos
 import PrimeReact from 'primereact/api';
 import { PrimeReactProvider } from 'primereact/api';
