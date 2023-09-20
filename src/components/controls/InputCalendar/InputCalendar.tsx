@@ -44,19 +44,12 @@ export const InputCalendar: React.FC<InputCalendarProps<any>> = ({
       control={control}
       defaultValue={defaultValue}
       render={({ field }) => (
-        <div className={styles.container}>
+        <div className={classNames(className, styles.container)}>
           <label htmlFor={_name}>{label}</label>
-          <div className={classNames(
-            styles.input,
-            icon && "p-inputgroup"
-          )}>
+          <div className={classNames(icon && "p-inputgroup")}>
             <Calendar
               {...field}
-              className={classNames(
-                className,
-                styles.input,
-                isFormFieldInvalid() && "p-invalid"
-              )}
+              className={classNames(isFormFieldInvalid() && "p-invalid", styles.input)}
               inputId={_name}
               name={_name}
               dateFormat="dd/mm/yy"
