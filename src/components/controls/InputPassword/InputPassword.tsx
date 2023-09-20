@@ -11,6 +11,7 @@ import styles from "./InputPassword.module.scss"
 
 export type InputPasswordProps<T extends FieldValues> = {
   className?: string
+  inputClassName?: string
   name: keyof T
   label: string
   control: Control<T>
@@ -23,6 +24,7 @@ export type InputPasswordProps<T extends FieldValues> = {
 
 export const InputPassword: React.FC<InputPasswordProps<any>> = ({
   className,
+  inputClassName,
   name,
   label,
   control,
@@ -54,6 +56,7 @@ export const InputPassword: React.FC<InputPasswordProps<any>> = ({
         )}>
           <label htmlFor={_name}>{label}</label>
           <span className={classNames(
+            inputClassName,
             styles.input,
             "p-inputgroup",
             leftIcon && "p-input-icon-left"
