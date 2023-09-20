@@ -6,6 +6,7 @@ import styles from "./InputText.module.scss"
 
 export type InputTextProps<T extends FieldValues> = {
   className?: string
+  inputClassName?: string
   name: keyof T
   label: string
   control: Control<T>
@@ -19,6 +20,7 @@ export type InputTextProps<T extends FieldValues> = {
 
 export const InputText: React.FC<InputTextProps<any>> = ({
   className,
+  inputClassName,
   name,
   label,
   control,
@@ -56,6 +58,7 @@ export const InputText: React.FC<InputTextProps<any>> = ({
             <InpText
               {...field}
               className={classNames(
+                inputClassName,
                 styles.input,
                 isFormFieldInvalid() && "p-invalid"
               )}
